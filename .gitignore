@@ -1,0 +1,7 @@
+node_modules/
+src/
+vendor/
+gulpfile.js
+.env
+package.json
+package-lock.json
