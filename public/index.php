@@ -33,7 +33,8 @@ $router->get('/mensaje', [LoginController::class, 'mensaje']);
 //TODO: Area privada
 $router->get('/cita', [CitaController::class, 'index']);
 $router->get('/citas', [CitaController::class, 'citas']);
-$router->post('/citas/eliminar', [CitaController::class, 'eliminar']);
+$router->post('/citas', [CitaController::class, 'eliminar']);
+
 $router->get('/admin', [AdminController::class, 'index']);
 
 //! API de citas

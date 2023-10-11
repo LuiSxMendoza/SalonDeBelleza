@@ -3,9 +3,9 @@
         <div class="recupera">
             <div class="recupera__contenedor">
                 <div class="recupera__texto">
-                    <h1 class="recupera__heading">Recuperar Password</h1>
+                    <h1 class="recupera__heading">¡Recuperar Password!</h1>
                     <p class="recupera__descripcion">
-                        Ingresa una nueva contraseña
+                        Ingresa una nueva contraseña:
                     </p>
                 </div>
                 

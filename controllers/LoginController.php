@@ -2,7 +2,9 @@
 
 namespace Controllers;
 
-use Classes\Email;
+require_once ('../classes/Email.php');
+
+use Classes\EmailAuth;
 use Model\Usuario;
 use MVC\Router;
 
@@ -86,11 +88,14 @@ class LoginController {
                 if ($usuario && $usuario->confirmado === '1') {
                     //? Enviar token
                     $usuario->crearToken();
+
                     //? Almacenar en BD
                     $usuario->guardar();
+
                     //? Enviar email
-                    $email = new Email($usuario->email, $usuario->nombre, $usuario->token);
-                    $email->enviarInstrucciones();
+                    $email = new EmailAuth($usuario->email, $usuario->nombre, $usuario->token);
+                    $email->enviarInstruccionesPassword();
+                    
                     //? Alerta exito
                     Usuario::setAlerta('exito', 'Hemos enviado las instrucciones a tu email');
 
@@ -148,6 +153,10 @@ class LoginController {
                 $usuario->token = null;
                 $resultado =$usuario->guardar();
 
+                //? Enviar email
+                $email = new EmailAuth($usuario->email, $usuario->nombre, $usuario->token);
+                $email->enviarAlertaPassword();
+
                 //? Msj de exito
                 Usuario::setAlerta('exito', 'Contraseña actualizada correctamente');
 
@@ -196,8 +205,8 @@ class LoginController {
                     $resultado = $usuario->guardar();
 
                     //? Enviar Email
-                    $email = new Email($usuario->email, $usuario->nombre, $usuario->token);
-                    $email->enviarConfirmacion();
+                    $email = new EmailAuth($usuario->email, $usuario->nombre, $usuario->token);
+                    $email->enviarConfirmacionRegistro();
                     
 
                     if($resultado) {
@@ -231,8 +240,15 @@ class LoginController {
         } else {
             //? Confirmar usuario
             $usuario->confirmado = "1";
+
             $usuario->token = null;
+
             $usuario->guardar();
+
+            //? Enviar Email
+            $email = new EmailAuth($usuario->email, $usuario->nombre, $usuario->token);
+            $email->enviarNotificacionConfirmado();
+
             Usuario::setAlerta('exito', 'Cuenta confirmada correctamente');
         }
 

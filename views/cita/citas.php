@@ -12,7 +12,7 @@
                     <?php  
                         if(count($citas) != 0) { ?>
                             <p class="datosuser__descripcion">
-                                A continuación se muestran las citas que agendaste :)
+                                A continuación se muestran las citas que agendaste:
                             </p>
                         <?php }
                     ?>
@@ -30,12 +30,12 @@
                     <ul class="citauser">
                         <?php foreach($citas as $cita) { ?>
                             <li>
-                                <p class="nota">Fecha y Hora de las Citas:</p>
+                                <p class="nota">Fecha y Hora de la Cita:</p>
                                 <p>Fecha: <span><?php echo $cita->fecha; ?></span></p>
                                 <p>Hora: <span>$<?php echo $cita->hora; ?></span></p>
                     
                                 <div class="acciones">
-                                    <form action="/citas/eliminar" method="POST">
+                                    <form action="/citas" method="POST">
                                         <input type="hidden" name="id" value="<?php echo $cita->id; ?>">
                     
                                         <input type="submit" value="Cancelar Cita" class="boton-accionesb">

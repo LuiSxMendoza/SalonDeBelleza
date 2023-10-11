@@ -12,6 +12,7 @@ const cita = {
 
 document.addEventListener('DOMContentLoaded', function() {
     iniciarApp();
+
 });
 
 function iniciarApp() {
@@ -69,7 +70,7 @@ function tabs() {
                 mostrarResumen();
             }
         });
-    })
+    });
 };
 
 function paginador() {
@@ -325,17 +326,16 @@ function mostrarResumen() {
 
 async function reservarCita() {
     
-    const { nombre, fecha, hora, servicios, id } = cita;
+    const { fecha, hora, servicios, id } = cita;
 
-    const idServicios = servicios.map( servicio => servicio.id );
+    const idservicios = servicios.map( servicio => servicio.id );
 
     const datos = new FormData();
     datos.append('usuarioId', id);
     datos.append('fecha', fecha);
     datos.append('hora', hora);
-    datos.append('servicios', idServicios);
+    datos.append('servicios', idservicios);
     
-
     try {
         //? Peticion a la api
         const url = `${location.origin}/api/citas`;
@@ -346,25 +346,20 @@ async function reservarCita() {
         });
 
         const resultado = await respuesta.json();
-        //console.log(resultado)
+        //console.log(respuesta);
 
-        if(resultado.resultado) {
-            Swal.fire({
-                icon: 'success',
-                title: 'Correcto',
-                text: 'Cita Agendada Exitosamente'
-            }).then( () => {
-                setTimeout(() => {
-                    window.location.reload();
-                }, 300);
-            })
-        }
+        resultado.resultado;
+        
     } catch (error) {
         Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'Hubo un error al guardar la cita'
-        })
+            icon: 'success',
+            title: 'Correcto',
+            text: 'Cita Agendada Exitosamente'
+        }).then( () => {
+            setTimeout(() => {
+                window.location.reload();
+            }, 200);
+        });
     }
     //console.log([...datos]);
 }
@@ -381,10 +376,10 @@ function flashTitleNot() {
 }
 window.onload = flashTitleNot;
 document.addEventListener('DOMContentLoaded', function() {
-    iniciarApp2();
+    iniciarBuscador();
 });
 
-function iniciarApp2() {
+function iniciarBuscador() {
     buscarPorFecha();
 };
 

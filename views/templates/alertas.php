@@ -6,7 +6,7 @@
                 echo $mensaje; 
                 $page = $_SERVER['REQUEST_URI'];
                 //debuguear($_SERVER);
-                $sec = "4";
+                $sec = "2.5";
                 header("Refresh: $sec; url=$page");
             ?>
         </div>
