@@ -56,7 +56,7 @@ class LoginController {
         $alertas = Usuario::getAlertas();
 
         $router->render('auth/login', [
-            'titulo' => 'Login',
+            'titulo' => 'Iniciar Sesion',
             'alertas' => $alertas
         ]);
     }
@@ -110,7 +110,7 @@ class LoginController {
         $alertas = Usuario::getAlertas();
         
         $router->render('auth/olvide-password', [
-            'titulo' => 'Olvide',
+            'titulo' => 'Olvide Contraseña',
             'alertas' => $alertas
         ]);
     }
@@ -171,7 +171,7 @@ class LoginController {
         $alertas = Usuario::getAlertas();
 
         $router->render('auth/recupera', [
-            'titulo' => 'Recuperar',
+            'titulo' => 'Recuperar Cuenta',
             'alertas' => $alertas,
             'error' => $error
         ]);
@@ -257,13 +257,15 @@ class LoginController {
 
         //? Renderizar vista
         $router->render('auth/confirma-cuenta', [
-            'titulo' => 'Confirmar',
+            'titulo' => 'Cuenta Confirmada',
             'alertas' => $alertas
         ]);
     }
 
     public static function mensaje(Router $router) {
         
-        $router->render('auth/mensaje');
+        $router->render('auth/mensaje', [
+            'titulo' => 'Cuenta Creada',
+        ]);
     }
 }

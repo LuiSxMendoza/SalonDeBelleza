@@ -4,14 +4,27 @@
         <div class="confirma">
             <div class="confirma__contenedor">
                 <div class="confirmaste">
-                    <h1 class="confirmaste__heading">¡Confirmar Cuenta!</h1>
+                    <h1 class="confirmaste__heading">¡Confirmaste tu Cuenta!</h1>
                 </div>
 
+                <?php foreach ( $alertas as $key => $mensajes ):
+                        foreach($mensajes as $mensaje):
+                ?>
+                        <div class="alerta <?php echo $key; ?>">
+                            <?php 
+                                echo $mensaje; 
+                                $page = $_SERVER['REQUEST_URI'];
+                                //debuguear($_SERVER);
+                                $sec = "15";
+                                header("Refresh: $sec; url=$page");
+                            ?>
+                        </div>
                 <?php
-                    include_once __DIR__ . '/../templates/alertas.php'
+                        endforeach; 
+                    endforeach;
                 ?>
 
-                <a href="/" class="formulario__boton">Inicia sesion</a>
+                <a href="/" class="formulario__boton">Ir a Inicio</a>
             </div>
         </div>
 

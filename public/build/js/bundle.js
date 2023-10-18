@@ -11,8 +11,7 @@ const cita = {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    iniciarApp();
-
+    iniciarApp(); //! Mandamos llamar las funciones despues de cargar la pagina completamente
 });
 
 function iniciarApp() {
@@ -31,6 +30,8 @@ function iniciarApp() {
 
     mostrarResumen(); //? Muestra el resumen de la cita
 };
+
+//! Mostrar sección citas
 
 function mostrarSeccion() {
 
@@ -72,6 +73,8 @@ function tabs() {
         });
     });
 };
+
+//! Funciones de paginador y botones
 
 function paginador() {
 
@@ -120,6 +123,7 @@ function pagSiguiente() {
     });
 }
 
+//! Consultamos la api de Servicios
 async function consultarApi() {
 
     try {
@@ -132,6 +136,8 @@ async function consultarApi() {
         
     }
 }
+
+//! Listamos los servicios al cliente
 
 function mostrarServicios(servicios) {
     servicios.forEach( servicio => {
@@ -159,6 +165,8 @@ function mostrarServicios(servicios) {
     })
 }
 
+//! Agregar servicios al arreglo de cita
+
 function servicioSeleccionado(servicio) {
     const { id } = servicio;
     const { servicios } = cita;
@@ -178,13 +186,16 @@ function servicioSeleccionado(servicio) {
     }
 }
 
+//! Obtenemos datos de Usuario
+
 function idCliente() {
     cita.id = document.querySelector('#id').value;
 }
-
 function nombreCliente() {
     cita.nombre = document.querySelector('#nombre').value;
 }
+
+//! Validar fecha de cerrado y abierto
 
 function fechaCita() {
     const inputFecha = document.querySelector('#fecha');
@@ -201,6 +212,8 @@ function fechaCita() {
     })
 }
 
+//! Validar hora de cerrado y abierto
+
 function horaCita() {
     const inputHora = document.querySelector('#hora');
     inputHora.addEventListener('input', function(e) {
@@ -208,7 +221,7 @@ function horaCita() {
         const citaHora = e.target.value;
         const hora = citaHora.split(":") [0];
         
-        if(hora < 10 || hora > 18) {
+        if(hora < 8 || hora > 18) {
             e.target.value = '';
             mostrarAlerta('Negocio cerrado', 'error', '.formulario');
         } else{
@@ -216,6 +229,8 @@ function horaCita() {
         }
     })
 }
+
+//? Mostrar Alertas
 
 function mostrarAlerta(mensaje, tipo, elemento, desaparece = true) {
 
@@ -243,6 +258,8 @@ function mostrarAlerta(mensaje, tipo, elemento, desaparece = true) {
     }
 }
 
+//! Mostrar resumen de servicios
+
 function mostrarResumen() {
     const resumen = document.querySelector('.seccion__resumen');
 
@@ -269,7 +286,7 @@ function mostrarResumen() {
 
     //? Iterar en los sevicios
     servicios.forEach(servicio => {
-        const { id, precio, nombre } = servicio;
+        const { precio, nombre } = servicio;
 
         const contenedorServicio = document.createElement('DIV');
         contenedorServicio.classList.add('seccion__servicio');
@@ -324,6 +341,7 @@ function mostrarResumen() {
     resumen.appendChild(botonReservar);
 }
 
+//? Mandar datos a controlador php
 async function reservarCita() {
     
     const { fecha, hora, servicios, id } = cita;
@@ -364,17 +382,23 @@ async function reservarCita() {
     //console.log([...datos]);
 }
 
+//? Barra de titulo dinamica
+
 function flashTitleNot() {
     var origTitle = document.title;
     var isFlash = false;
     function changeTitle() {
         document.title = isFlash ?
-        "¡Bienvenido! - App Salon de Belleza" : origTitle;
+        "(1) ¡Bienvenido - App Salon de Belleza!" : origTitle;
         isFlash = !isFlash;
     }
     setInterval(changeTitle, 2500);
 }
-window.onload = flashTitleNot;
+
+//? LLama función de titulo
+
+flashTitleNot(); 
+//window.onload = flashTitleNot;
 document.addEventListener('DOMContentLoaded', function() {
     iniciarBuscador();
 });

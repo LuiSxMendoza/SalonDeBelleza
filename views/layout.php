@@ -4,9 +4,9 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="App Web Salon de Belleza">
+    <meta name="description" content="App Web para Administrar Salon Belleza">
     <meta name="author" content="Juan Luis Martinez Mendoza"> 
-    <title>Salón de Belleza - <?php echo $titulo ?? ''; ?></title>
+    <title> Salón de Belleza - <?php echo $titulo ?? ''; ?></title>
 
     <link rel="icon" href="/build/img/Recurso4x.png">
 

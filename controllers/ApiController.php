@@ -12,6 +12,7 @@ use Model\Servicio;
 use Model\Usuario;
 
 class ApiController {
+
     public static function index() {
         $servicios = Servicio::all();
         echo json_encode($servicios);
@@ -27,7 +28,7 @@ class ApiController {
 
         if ($resultado = $cita->guardar()) {
             //? Enviamos E-Mails
-            $email = new EmailApiGuardar($cita->fecha);
+            $email = new EmailApiGuardar($cita->fecha, $cita->hora);
             $email->enviarNotificacionCitaCreadaAdmin();
             $email->enviarNotificacionCitaCreadaUser();
         }
@@ -67,13 +68,13 @@ class ApiController {
             //? Identificamos al propietario de la cita
             $idCita = $cita->usuarioId;
             $usuario = Usuario::find($idCita);
-            //debuguear($usuario);
+            //debuguear($cita);
 
             //? Eliminar registro
             $cita->eliminar();
 
             //? Enviamos E-Mails
-            $email = new EmailApiCancelar($cita->fecha, $usuario->email, $usuario->nombre, $usuario->apellidos);
+            $email = new EmailApiCancelar($cita->fecha, $cita->hora, $usuario->email, $usuario->nombre, $usuario->apellidos);
             $email->enviarNotificacionCitaAdminElimino();
 
             //? Redireccionar

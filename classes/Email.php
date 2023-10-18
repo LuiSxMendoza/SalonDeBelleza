@@ -191,7 +191,7 @@ class EmailCitasEliminadas {
         try {
             $sg->send($email);
             /*
-            $response = 
+            $response = $sg->send($email);
             print $response->statusCode() . "\n";
             print_r($response->headers());
             print $response->body() . "\n";
@@ -241,12 +241,14 @@ class EmailCitasEliminadas {
 class EmailApiCancelar {
 
     public $fecha;
+    public $hora;
     public $email;
     public $nombre;
     public $apellidos;
 
-    public function __construct($fecha, $email, $nombre, $apellidos) {
+    public function __construct($fecha, $hora, $email, $nombre, $apellidos) {
         $this->fecha = $fecha;
+        $this->hora = $hora;
         $this->email = $email;
         $this->nombre = $nombre;
         $this->apellidos = $apellidos;
@@ -266,8 +268,8 @@ class EmailApiCancelar {
             "<p> 
                 <h1> ¡Hola: " . $this->nombre . " " . $this->apellidos . "! </h1>
                     <strong>  
-                        Un Administrador ha Cancelado tu cita con fecha: 
-                        <br> " . $this->fecha . ".
+                        Un Administrador ha Cancelado tu cita con la siguiente fecha y hora: 
+                        <br> " . $this->fecha . " - " . $this->hora . ".
                     </strong>
             </p>" .
             "<p> Puedes consultar tus citas desde la Sección - Mis Citas en la App Web. </p>" . 
@@ -277,13 +279,13 @@ class EmailApiCancelar {
         $apiKey = $_ENV['API_KEY'];
         $sg = new \SendGrid($apiKey);
         try {
-            $sg->send($email);
-            /*
-            $response = 
+            //$sg->send($email);
+            
+            $response = $sg->send($email);
             print $response->statusCode() . "\n";
             print_r($response->headers());
             print $response->body() . "\n";
-            */
+            
         } catch (Exception $e) {
             echo 'Caught exception: '. $e->getMessage() ."\n";
         }
@@ -293,9 +295,11 @@ class EmailApiCancelar {
 class EmailApiGuardar {
 
     public $fecha;
+    public $hora;
 
-    public function __construct($fecha) {
+    public function __construct($fecha, $hora) {
         $this->fecha = $fecha;
+        $this->hora = $hora;
     }
 
     //! E-Mails Citas Creadas
@@ -311,7 +315,8 @@ class EmailApiGuardar {
             "<p> <h1>¡Hola: Juan Luis!</h1>
                 <strong> 
                     El usuario: " . $_SESSION['nombre'] . " " . $_SESSION['apellidos'] . " 
-                    a Agendado una cita con fecha: <br> " . $this->fecha . ".
+                    a Agendado una cita con la siguiente fecha y hora: 
+                    <br> " . $this->fecha . " - " . $this->hora . ".
                 </strong>
             </p>" .
             "<p> Puedes consultar los servicios seleccionados desde el panel de Administración. </p>" . 
@@ -343,7 +348,8 @@ class EmailApiGuardar {
             "text/html", 
             "<p> <h1> ¡Hola: " . $_SESSION['nombre'] . " " . $_SESSION['apellidos'] . "! </h1>
                 <strong>   
-                    Has Agendado una cita con fecha: <br> " . $this->fecha . ".
+                    Has Agendado una cita con la siguiente fecha y hora: 
+                    <br> " . $this->fecha . " - " . $this->hora . ".
                 </strong>
             </p>" .
             "<p> Puedes consultar los detalles desde la sección - Mis Citas. </p>" . 
