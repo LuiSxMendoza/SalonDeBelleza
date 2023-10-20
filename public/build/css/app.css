@@ -890,13 +890,13 @@ p {
 }
 
 .not-webp .login {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
+  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 768px) {
   .not-webp .login {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1052,13 +1052,13 @@ p {
 }
 
 .not-webp .olvide {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
+  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 768px) {
   .not-webp .olvide {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1133,7 +1133,7 @@ p {
 }
 @media (min-width: 768px) {
   .not-webp .registrar {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1243,7 +1243,7 @@ p {
 }
 @media (min-width: 768px) {
   .not-webp .citaseccion {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1456,13 +1456,13 @@ p {
 }
 
 .not-webp .miscitas {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
+  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 768px) {
   .not-webp .miscitas {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1865,13 +1865,13 @@ p {
 }
 
 .not-webp .correo {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
+  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 768px) {
   .not-webp .correo {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1946,13 +1946,13 @@ p {
 }
 
 .not-webp .confirma {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
+  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 768px) {
   .not-webp .confirma {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
