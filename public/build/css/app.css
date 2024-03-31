@@ -360,11 +360,6 @@ body {
   width: 90%;
 }
 
-.layout__contenido {
-  width: 100%;
-  margin: 0 auto;
-}
-
 img {
   max-width: 100%;
   display: block;
@@ -450,7 +445,7 @@ p {
   background-color: #0875ab;
 }
 .tabs button.actual {
-  background-color: #ffffff;
+  background-color: #e1e1e1;
   color: #0da6f3;
 }
 
@@ -466,7 +461,7 @@ p {
 }
 
 .crud-volver {
-  background-color: #ffffff;
+  background-color: #0da6f3;
   font-size: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -474,7 +469,7 @@ p {
   display: block;
   width: 100%;
   text-align: center;
-  color: #1a1b15;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s ease;
   border: none;
@@ -485,7 +480,7 @@ p {
 }
 .crud-volver:hover {
   cursor: pointer;
-  background-color: #e6e6e6;
+  background-color: #0a85c3;
 }
 @media (min-width: 768px) {
   .crud-volver {
@@ -500,7 +495,7 @@ p {
 }
 
 .boton-crud {
-  background-color: #0da6f3;
+  background-color: #d81074;
   font-size: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -520,7 +515,7 @@ p {
 }
 .boton-crud:hover {
   cursor: pointer;
-  background-color: #0a85c3;
+  background-color: #a90c5b;
 }
 @media (min-width: 768px) {
   .boton-crud {
@@ -529,7 +524,7 @@ p {
 }
 
 .boton-acciones {
-  background-color: #0da6f3;
+  background-color: #d81074;
   font-size: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -546,7 +541,7 @@ p {
 }
 .boton-acciones:hover {
   cursor: pointer;
-  background-color: #0a85c3;
+  background-color: #a90c5b;
 }
 @media (min-width: 768px) {
   .boton-acciones {
@@ -581,7 +576,7 @@ p {
 }
 
 .boton-volver {
-  background-color: #ffffff;
+  background-color: #0da6f3;
   font-size: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -589,7 +584,7 @@ p {
   display: block;
   width: 100%;
   text-align: center;
-  color: #1a1b15;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s ease;
   border: none;
@@ -599,7 +594,7 @@ p {
 }
 .boton-volver:hover {
   cursor: pointer;
-  background-color: #e6e6e6;
+  background-color: #0a85c3;
 }
 @media (min-width: 768px) {
   .boton-volver {
@@ -657,7 +652,7 @@ p {
   }
 }
 .barra p {
-  background-color: #394659;
+  background-color: #d81074;
   font-size: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -665,7 +660,7 @@ p {
   display: block;
   width: 100%;
   text-align: center;
-  color: #ff8c00;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s ease;
   border: none;
@@ -673,11 +668,11 @@ p {
   font-size: 1.8rem;
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
-  cursor: no-drop;
+  cursor: not-allowed;
 }
 .barra p:hover {
   cursor: pointer;
-  background-color: #252e3a;
+  background-color: #a90c5b;
 }
 @media (min-width: 768px) {
   .barra p {
@@ -690,7 +685,7 @@ p {
   }
 }
 .barra .mis-citas {
-  background-color: #394659;
+  background-color: #0da6f3;
   font-size: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -698,7 +693,7 @@ p {
   display: block;
   width: 100%;
   text-align: center;
-  color: #ff8c00;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s ease;
   border: none;
@@ -709,7 +704,7 @@ p {
 }
 .barra .mis-citas:hover {
   cursor: pointer;
-  background-color: #252e3a;
+  background-color: #0a85c3;
 }
 @media (min-width: 768px) {
   .barra .mis-citas {
@@ -722,7 +717,7 @@ p {
   }
 }
 .barra__logout {
-  background-color: #394659;
+  background-color: #d81074;
   font-size: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -730,7 +725,7 @@ p {
   display: block;
   width: 100%;
   text-align: center;
-  color: #ff8c00;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s ease;
   border: none;
@@ -741,7 +736,7 @@ p {
 }
 .barra__logout:hover {
   cursor: pointer;
-  background-color: #252e3a;
+  background-color: #a90c5b;
 }
 @media (min-width: 768px) {
   .barra__logout {
@@ -761,7 +756,7 @@ p {
   }
 }
 .barra__botones {
-  background-color: #ffffff;
+  background-color: #0da6f3;
   font-size: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -769,7 +764,7 @@ p {
   display: block;
   width: 100%;
   text-align: center;
-  color: #1a1b15;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s ease;
   border: none;
@@ -779,7 +774,7 @@ p {
 }
 .barra__botones:hover {
   cursor: pointer;
-  background-color: #e6e6e6;
+  background-color: #0a85c3;
 }
 @media (min-width: 768px) {
   .barra__botones {
@@ -808,7 +803,6 @@ p {
 }
 @media (min-width: 768px) {
   .footer__titulo {
-    color: #ffffff;
     font-size: 2rem;
   }
 }
@@ -876,84 +870,75 @@ p {
             transform: translateY(0px);
   }
 }
-.webp .login {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
+.grid {
+  width: 100%;
 }
 @media (min-width: 768px) {
-  .webp .login {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
+  .grid__imagen {
+    background-image: url(../img/logo2.png);
+    background-size: 35rem 45rem;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
   }
 }
-
-.not-webp .login {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .not-webp .login {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (min-width: 1024px) {
+  .grid__imagen {
+    background-size: 50rem 60rem;
   }
 }
-
-.login {
-  padding: 3rem 0;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: right top;
-  background-repeat: no-repeat;
+.grid__contenido {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 @media (min-width: 768px) {
-  .login {
-    background-position: center bottom;
-    padding: 0;
+  .grid {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-.login h1 {
-  margin-bottom: 15rem;
+
+.olvide,
+.login,
+.recupera,
+.registrar {
+  padding: 1rem;
 }
-.login__texto {
+.olvide__texto,
+.login__texto,
+.recupera__texto,
+.registrar__texto {
   padding: 0;
 }
-.login__heading {
+.olvide__heading,
+.login__heading,
+.recupera__heading,
+.registrar__heading {
   font-family: "Noto Sans", sans-serif;
-  color: #0da6f3;
+  color: #d81074;
   font-weight: 900;
-  font-size: 3.3rem;
+  font-size: 3.5rem;
 }
-.login__descripcion {
+.olvide__descripcion,
+.login__descripcion,
+.recupera__descripcion,
+.registrar__descripcion {
   font-family: "Kanit", sans-serif;
-  color: #ffffff;
+  color: #1a1b15;
   text-align: center;
   font-weight: 600;
   font-size: 1.8rem;
 }
-.login__contenedor {
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 2px solid #1a1b15;
-  padding: 1rem;
-}
-@media (min-width: 768px) {
-  .login__contenedor {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 80%;
-    padding: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  .login__contenedor {
-    width: 50%;
-  }
+.olvide__contenedor,
+.login__contenedor,
+.recupera__contenedor,
+.registrar__contenedor {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .formulario {
@@ -975,7 +960,7 @@ p {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #1a1b15;
 }
 @media (min-width: 768px) {
   .formulario__campo label {
@@ -985,10 +970,10 @@ p {
   }
 }
 .formulario__campo input {
-  border: 1px solid #ffffff;
+  border: 1px solid #e1e1e1;
   padding: 1rem;
   background-color: unset;
-  color: #ffffff;
+  color: #1a1b15;
   font-weight: 700;
 }
 @media (min-width: 768px) {
@@ -1007,7 +992,7 @@ p {
   }
 }
 .formulario__boton {
-  background-color: #ffffff;
+  background-color: #d81074;
   font-size: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -1015,7 +1000,7 @@ p {
   display: block;
   width: 100%;
   text-align: center;
-  color: #1a1b15;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s ease;
   border: none;
@@ -1025,7 +1010,7 @@ p {
 }
 .formulario__boton:hover {
   cursor: pointer;
-  background-color: #e6e6e6;
+  background-color: #a90c5b;
 }
 @media (min-width: 768px) {
   .formulario__boton {
@@ -1035,157 +1020,6 @@ p {
 @media (min-width: 768px) {
   .formulario__boton {
     width: 25rem;
-  }
-}
-
-.webp .olvide {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .webp .olvide {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.not-webp .olvide {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .not-webp .olvide {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.olvide {
-  padding: 3rem 0;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: right top;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 768px) {
-  .olvide {
-    background-position: center bottom;
-    padding: 0;
-  }
-}
-.olvide__texto {
-  padding: 0;
-}
-.olvide__heading {
-  font-family: "Noto Sans", sans-serif;
-  color: #0da6f3;
-  font-weight: 900;
-  font-size: 3.5rem;
-}
-.olvide__descripcion {
-  font-family: "Kanit", sans-serif;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-.olvide__contenedor {
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 2px solid #1a1b15;
-  padding: 1rem;
-}
-@media (min-width: 768px) {
-  .olvide__contenedor {
-    width: 80%;
-    padding: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  .olvide__contenedor {
-    width: 50%;
-  }
-}
-
-.webp .registrar {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .webp .registrar {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.not-webp .registrar {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .not-webp .registrar {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.registrar {
-  padding: 3rem 0;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: right top;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 768px) {
-  .registrar {
-    padding: 0;
-    background-position: center bottom;
-  }
-}
-.registrar__texto {
-  padding: 0;
-}
-.registrar__heading {
-  font-family: "Noto Sans", sans-serif;
-  color: #0da6f3;
-  font-weight: 900;
-  font-size: 3.3rem;
-}
-.registrar__descripcion {
-  font-family: "Kanit", sans-serif;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-.registrar__contenedor {
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 2px solid #1a1b15;
-  padding: 1rem;
-}
-@media (min-width: 768px) {
-  .registrar__contenedor {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 80%;
-    padding: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  .registrar__contenedor {
-    width: 60%;
   }
 }
 
@@ -1207,7 +1041,7 @@ p {
 .accionesauth a {
   font-family: "Yellowtail", cursive;
   font-size: 2.5rem;
-  color: #0da6f3;
+  color: #d81074;
   line-height: 0.6;
   margin-bottom: 3rem;
 }
@@ -1215,8 +1049,8 @@ p {
   display: block;
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
-  font-weight: 600;
-  color: #ff8c00;
+  font-weight: 800;
+  color: #1a1b15;
 }
 .accionesauth a:last-of-type {
   margin-bottom: 0;
@@ -1227,34 +1061,9 @@ p {
   }
 }
 
-.webp .citaseccion {
-  background-color: #ebe7de;
-}
-@media (min-width: 768px) {
-  .webp .citaseccion {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.not-webp .citaseccion {
-  background-color: #ebe7de;
-}
-@media (min-width: 768px) {
-  .not-webp .citaseccion {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
 .citaseccion {
   min-height: 100vh;
   padding: 4rem 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .citaseccion__contenedor {
   display: flex;
@@ -1264,24 +1073,19 @@ p {
 .citaseccion .formulario label {
   color: #1a1b15;
 }
-@media (min-width: 768px) {
-  .citaseccion .formulario label {
-    color: #ffffff;
-  }
-}
 .citaseccion .formulario input {
   background-color: #e1e1e1;
   border: none;
   color: #1a1b15;
 }
 .citaseccion .formulario input:disabled {
-  background-color: #c20000;
+  background-color: #d81074;
   color: #1a1b15;
 }
 
 .cita__heading {
   font-family: "Noto Sans", sans-serif;
-  color: #0da6f3;
+  color: #d81074;
   font-weight: 900;
   font-size: 3.5rem;
 }
@@ -1292,11 +1096,6 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
 }
-@media (min-width: 768px) {
-  .cita__descripcion {
-    color: #ffffff;
-  }
-}
 
 .seccion {
   padding-top: 2rem;
@@ -1306,22 +1105,12 @@ p {
   text-align: center;
   font-size: 3.5rem;
 }
-@media (min-width: 768px) {
-  .seccion__titulo {
-    color: #ffffff;
-  }
-}
 .seccion__descripcion {
   text-align: center;
   color: #1a1b15;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
-}
-@media (min-width: 768px) {
-  .seccion__descripcion {
-    color: #ffffff;
-  }
 }
 
 .mostrar {
@@ -1341,7 +1130,7 @@ p {
 }
 
 .servicio {
-  background-color: #ffffff;
+  background-color: #e1e1e1;
   text-align: center;
   font-weight: bold;
   padding: 2rem;
@@ -1359,7 +1148,7 @@ p {
 }
 .servicio:hover {
   cursor: pointer;
-  background-color: #f2f2f2;
+  background-color: #d4d4d4;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
@@ -1368,7 +1157,7 @@ p {
   font-family: "Noto Sans", sans-serif;
 }
 .servicio__precio {
-  color: #0da6f3;
+  color: #d81074;
   font-family: "Yellowtail", cursive;
   font-size: 2rem;
 }
@@ -1384,7 +1173,7 @@ p {
 
 .seccion__heading {
   font-family: "Noto Sans", sans-serif;
-  color: #ff8c00;
+  color: #d81074;
   font-weight: 900;
   font-size: 3rem;
 }
@@ -1396,25 +1185,15 @@ p {
 .seccion__servicio:last-of-type {
   margin-bottom: 2rem;
 }
-@media (min-width: 768px) {
-  .seccion__servicio {
-    border-bottom: 1px solid #ffffff;
-  }
-}
 .seccion__resumen p {
   font-weight: 900;
   color: #1a1b15;
-}
-@media (min-width: 768px) {
-  .seccion__resumen p {
-    color: #ffffff;
-  }
 }
 .seccion__resumen p span {
   color: #0da6f3;
 }
 .seccion__boton {
-  background-color: #0da6f3;
+  background-color: #d81074;
   font-size: 2rem;
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -1434,7 +1213,7 @@ p {
 }
 .seccion__boton:hover {
   cursor: pointer;
-  background-color: #0a85c3;
+  background-color: #a90c5b;
 }
 @media (min-width: 768px) {
   .seccion__boton {
@@ -1442,38 +1221,9 @@ p {
   }
 }
 
-.webp .miscitas {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .webp .miscitas {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.not-webp .miscitas {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .not-webp .miscitas {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
 .miscitas {
   min-height: 100vh;
   padding: 4rem 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .miscitas__contenedor {
   display: flex;
@@ -1484,14 +1234,14 @@ p {
   font-family: "Noto Sans", sans-serif;
   font-size: 3.5rem;
   font-weight: 900;
-  color: #0da6f3;
+  color: #d81074;
   margin-bottom: 2rem;
 }
 .miscitas .datosuser__descripcion {
   text-align: center;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
+  color: #1a1b15;
   margin-top: 2rem;
   font-weight: 700;
   padding: 0 0 1rem 0;
@@ -1509,10 +1259,10 @@ p {
   }
 }
 .miscitas .datoscita .citauser p.nota {
-  color: #ff8c00;
+  color: #0da6f3;
 }
 .miscitas .datoscita .citauser li {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #e1e1e1;
   padding: 1rem;
   text-align: center;
 }
@@ -1527,11 +1277,11 @@ p {
 .miscitas .datoscita .citauser li p {
   font-size: 2rem;
   font-family: "Kanit", sans-serif;
-  color: #0da6f3;
+  color: #d81074;
   font-weight: 700;
 }
 .miscitas .datoscita .citauser li p span {
-  color: #ffffff;
+  color: #1a1b15;
   font-size: 1.8rem;
 }
 .miscitas .datoscita .acciones .boton-accionesb {
@@ -1540,7 +1290,7 @@ p {
   margin: 0 auto;
 }
 .miscitas .footer__titulo {
-  color: #ffffff;
+  color: #1a1b15;
 }
 
 .citas, .serviciosadm {
@@ -1565,26 +1315,26 @@ p {
   }
 }
 .citas li, .serviciosadm li {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #e1e1e1;
   border-radius: 0.5rem;
   padding: 1.5rem;
-  border-top: 4px solid #696969;
-  border-bottom: 4px solid #696969;
+  border-top: 4px solid #343232;
+  border-bottom: 4px solid #343232;
   transition: all ease 1s;
   margin-top: 2.5rem;
   flex: 1;
 }
 .citas li p, .serviciosadm li p {
-  color: #0da6f3;
+  color: #d81074;
   font-size: 1.6rem;
   font-weight: 900;
 }
 .citas li span, .serviciosadm li span {
-  color: #ffffff;
+  color: #1a1b15;
 }
 .citas li h3, .serviciosadm li h3 {
   font-weight: 900;
-  color: #ffffff;
+  color: #d81074;
   font-size: 3.5rem;
   padding: 2rem 0 1rem 0;
 }
@@ -1592,7 +1342,7 @@ p {
 .dialibre h2 {
   margin-top: 5rem;
   margin-bottom: 3rem;
-  color: #ff8c00;
+  color: #d81074;
   font-weight: 900;
   font-size: 2.5rem;
 }
@@ -1617,20 +1367,13 @@ p {
     text-align: justify;
   }
 }
-@media (min-width: 1130px) {
-  .serviciosadm {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 .serviciosadm li {
-  border-top: 4px solid #e1e1e1;
-  border-bottom: 4px solid #e1e1e1;
+  border-top: 4px solid #343232;
+  border-bottom: 4px solid #343232;
 }
 .serviciosadm li:first-of-type {
-  border-top: 4px solid #e1e1e1;
-  border-bottom: 4px solid #e1e1e1;
+  border-top: 4px solid #343232;
+  border-bottom: 4px solid #343232;
 }
 .serviciosadm .acciones {
   display: flex;
@@ -1650,29 +1393,37 @@ p {
   width: auto;
 }
 
-.webp .admin {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
+.grid-auth {
+  width: 100%;
 }
 @media (min-width: 768px) {
-  .webp .admin {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
+  .grid-auth__imagen {
+    background-image: url(../img/logo2.png);
+    background-size: 27rem 37rem;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    box-shadow: 17px 10px 14px 0px #e1e1e1;
   }
 }
-
-.not-webp .admin {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (min-width: 1024px) {
+  .grid-auth__imagen {
+    background-size: 37rem 47rem;
+  }
+}
+.grid-auth__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-shadow: -17px 10px 14px 0px #e1e1e1;
 }
 @media (min-width: 768px) {
-  .not-webp .admin {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
+  .grid-auth {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 2fr;
   }
 }
 
@@ -1695,18 +1446,18 @@ p {
   }
 }
 .admin .busqueda__heading {
-  color: #ffffff;
+  color: #1a1b15;
   margin-bottom: 2rem;
 }
 .admin .cita__heading {
-  color: #0da6f3;
+  color: #d81074;
   font-size: 3.5rem;
 }
 .admin .cita__descripcion {
   text-align: center;
   font-weight: 700;
   font-size: 1.8rem;
-  color: #ffffff;
+  color: #1a1b15;
 }
 .admin .layoutb {
   margin-bottom: 2rem;
@@ -1717,29 +1468,7 @@ p {
   border: none;
 }
 .admin .footer__titulo {
-  color: #ffffff;
-}
-
-.webp .servicioslyt {
-  background-color: #ebe7de;
-}
-@media (min-width: 768px) {
-  .webp .servicioslyt {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.not-webp .servicioslyt {
-  background-color: #ebe7de;
-}
-@media (min-width: 768px) {
-  .not-webp .servicioslyt {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  color: #1a1b15;
 }
 
 .servicioslyt {
@@ -1755,38 +1484,9 @@ p {
   min-height: 90vh;
 }
 
-.webp .crearservicio {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .webp .crearservicio {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.not-webp .crearservicio {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .not-webp .crearservicio {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
 .crearservicio {
   min-height: 100vh;
   padding: 4rem 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .crearservicio__contenedor {
   display: flex;
@@ -1794,47 +1494,18 @@ p {
   min-height: 90vh;
 }
 .crearservicio .cita__descripcion {
-  color: #ffffff;
+  color: #1a1b15;
 }
 .crearservicio .formulario {
   margin-bottom: 2rem;
 }
 .crearservicio .footer__titulo {
-  color: #ffffff;
-}
-
-.webp .actualizarservicio {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .webp .actualizarservicio {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.not-webp .actualizarservicio {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .not-webp .actualizarservicio {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  color: #1a1b15;
 }
 
 .actualizarservicio {
   min-height: 100vh;
   padding: 4rem 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .actualizarservicio__contenedor {
   display: flex;
@@ -1842,57 +1513,20 @@ p {
   min-height: 90vh;
 }
 .actualizarservicio .cita__descripcion {
-  color: #ffffff;
+  color: #1a1b15;
 }
 .actualizarservicio .formulario {
   margin-bottom: 2rem;
 }
 .actualizarservicio .footer__titulo {
-  color: #ffffff;
-}
-
-.webp .correo {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .webp .correo {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.not-webp .correo {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .not-webp .correo {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  color: #1a1b15;
 }
 
 .correo {
-  padding: 3rem 0;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: right top;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-@media (min-width: 768px) {
-  .correo {
-    background-position: center bottom;
-    padding: 0;
-  }
 }
 .correo h1 {
   margin-bottom: 5rem;
@@ -1903,77 +1537,28 @@ p {
 }
 .correo .mensaje__heading {
   font-family: "Noto Sans", sans-serif;
-  color: #0da6f3;
+  color: #d81074;
   font-weight: 900;
   font-size: 3.3rem;
 }
 .correo .mensaje__descripcion {
   font-family: "Kanit", sans-serif;
-  color: #ffffff;
+  color: #1a1b15;
   text-align: center;
   font-weight: 600;
   font-size: 1.8rem;
 }
-.correo__contenedor {
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 2px solid #1a1b15;
-  padding: 1rem;
-}
-@media (min-width: 768px) {
-  .correo__contenedor {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 80%;
-    padding: 3rem;
-  }
-}
 @media (min-width: 1024px) {
   .correo__contenedor {
-    width: 50%;
-  }
-}
-
-.webp .confirma {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .webp .confirma {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.not-webp .confirma {
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FTel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: 768px) {
-  .not-webp .confirma {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.5) 100%), url("../img/FDesk.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 85%;
   }
 }
 
 .confirma {
-  padding: 3rem 0;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: right top;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-@media (min-width: 768px) {
-  .confirma {
-    background-position: center bottom;
-    padding: 0;
-  }
 }
 .confirma h1 {
   margin-bottom: 5rem;
@@ -1983,25 +1568,11 @@ p {
 }
 .confirma .confirmaste__heading {
   font-family: "Noto Sans", sans-serif;
-  color: #0da6f3;
+  color: #d81074;
   font-weight: 900;
   font-size: 3.3rem;
 }
 .confirma__contenedor {
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 2px solid #1a1b15;
-  padding: 1rem;
-}
-@media (min-width: 768px) {
-  .confirma__contenedor {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 80%;
-    padding: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  .confirma__contenedor {
-    width: 50%;
-  }
+  width: 85%;
 }
 /*# sourceMappingURL=app.css.map */

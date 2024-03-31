@@ -3,7 +3,7 @@
     <input 
         type="text"
         id="nombre"
-        placeholder="Nombre Servicio"
+        placeholder="Nombre del Servicio"
         name="nombre"
         value="<?php echo $servicio->nombre; ?>"
     >
@@ -14,7 +14,7 @@
     <input 
         type="number"
         id="precio"
-        placeholder="Precio Servicio"
+        placeholder="Precio del Servicio"
         name="precio"
         value="<?php echo $servicio->precio; ?>"
     >

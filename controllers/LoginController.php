@@ -159,11 +159,6 @@ class LoginController {
 
                 //? Msj de exito
                 Usuario::setAlerta('exito', 'Contraseña actualizada correctamente');
-
-                //? Redireccionar
-                if($resultado) {
-                    header('Location: /');
-                }
             }
         }
 
