@@ -389,7 +389,7 @@ function flashTitleNot() {
     var isFlash = false;
     function changeTitle() {
         document.title = isFlash ?
-        "(1) ¡Bienvenido - App Salon de Belleza!" : origTitle;
+        "(1) ¡Bienvenido - Mendoza'S Beauty Salón!" : origTitle;
         isFlash = !isFlash;
     }
     setInterval(changeTitle, 2500);

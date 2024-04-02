@@ -9,7 +9,7 @@
                 <div class="miscitas__contenedor">
                     <div class="datosuser">
                         <h3 class="datosuser__nombre">¡Bienvenido -
-                            <?php echo $usuario->nombre . ' ' . $usuario->apellidos; ?>!
+                            <?php echo $usuario->nombre; ?>!
                         </h3>
                         
                         <a href="/cita" class="crud-volver">Volver</a>
